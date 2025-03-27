@@ -303,7 +303,19 @@ ul.task-list input[type="checkbox"] {
 
 .profile {
   width: 100%;
-
+  
+   .disc {
+    margin-bottom: 5px;
+    margin-top: 5px;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	
+	 p {
+      display: inline-block;
+      margin: 0;
+    }
+  }
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;

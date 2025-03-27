@@ -13,10 +13,15 @@ layout: default
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
-
+I study topics in microeconomic theory, especially learning and information.<br /> My CV can be found <a href="{{ '/assets/pdf/CV_mjHM.pdf' | relative_url }}" style="color: inherit">here</a>.
   <article>
     {% if page.profile %}
+	
+	{% if page.profile.disc %}
+	  <div class="disc">{{ page.profile.disc }}</div>
+	{% endif %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+	
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
