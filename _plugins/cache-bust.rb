@@ -25,7 +25,7 @@ module Jekyll
       end
 
       def file_content
-        local_file_name = file_name.slice((file_name.index('assets/')..-1))
+        local_file_name = file_name.slice((file_name.index('files/')..-1))
         File.read(local_file_name)
       end
 
@@ -43,7 +43,7 @@ module Jekyll
     end
 
     def bust_css_cache(file_name)
-      CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+      CacheDigester.new(file_name: file_name, directory: 'files/_sass').digest!
     end
   end
 end
