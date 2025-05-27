@@ -6,7 +6,7 @@ on:
       - master
       - main
     paths:
-      - "assets/**"
+      - "files/**"
       - "**.html"
       - "**.js"
       - "**.liquid"
@@ -24,7 +24,7 @@ on:
       - master
       - main
     paths:
-      - "assets/**"
+      - "files/**"
       - "**.html"
       - "**.js"
       - "**.liquid"
