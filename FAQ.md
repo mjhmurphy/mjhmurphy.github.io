@@ -44,7 +44,7 @@ Make sure you followed through the [deployment instructions](#deployment) in the
 
 If the website does not load the theme, the layout looks weird, and all links are broken, being the main page displayed this way:
 
-<img src="assets/img/template_error.png" width="500">
+<img src="files/img/template_error.png" width="500">
 
 make sure to correctly specify the `url` and `baseurl` paths in `_config.yml`. Set `url` to `https://<your-github-username>.github.io` or to `https://<your.custom.domain>` if you are using a custom domain. If you are deploying a <ins>personal</ins> or <ins>organization</ins> website, leave `baseurl` **empty** (do **NOT** delete it). If you are deploying a project page, set `baseurl: /<your-project-name>/`. If all previous steps were done correctly, all is missing is for your browser to fetch again the site stylesheet. For this, you can:
 
@@ -121,19 +121,19 @@ Note that libraries tend to be deprecated and support for them dropped as they a
 
 ### How can I update Academicons version on the template
 
-To update the Academicons version, you need to download the latest release from the [Academicons website](https://jpswalsh.github.io/academicons/). After downloading, extract the zip file and copy the files `academicons.ttf` and `academicons.woff` from the `fonts/` directory to `assets/fonts/` and the file `academicons.min.css` from the `css/` directory to `assets/css/`.
+To update the Academicons version, you need to download the latest release from the [Academicons website](https://jpswalsh.github.io/academicons/). After downloading, extract the zip file and copy the files `academicons.ttf` and `academicons.woff` from the `fonts/` directory to `files/fonts/` and the file `academicons.min.css` from the `css/` directory to `files/css/`.
 
 ---
 
 ### How can I update Font Awesome version on the template
 
-To update the Font Awesome version, you need to download the latest release "for the web" from the [Font Awesome website](https://fontawesome.com/download). After downloading, extract the zip file and copy the `scss/` directory content to `_sass/font-awesome/` and the `webfonts/` content to `assets/webfonts/`.
+To update the Font Awesome version, you need to download the latest release "for the web" from the [Font Awesome website](https://fontawesome.com/download). After downloading, extract the zip file and copy the `scss/` directory content to `_sass/font-awesome/` and the `webfonts/` content to `files/webfonts/`.
 
 ---
 
 ### How can I update Tabler Icons version on the template
 
-To update the Tabler Icons version, you need to download the latest release from the [Tabler Icons website](https://tabler.io/icons). After downloading, extract the zip file and copy the files `tabler-icons-filled.scss`, `tabler-icons-outline.scss`, and `tabler-icons.scss` from the `webfont/` directory to `_sass/tabler-icons/`, and all the files from `webfont/fonts/` to `assets/fonts/`.
+To update the Tabler Icons version, you need to download the latest release from the [Tabler Icons website](https://tabler.io/icons). After downloading, extract the zip file and copy the files `tabler-icons-filled.scss`, `tabler-icons-outline.scss`, and `tabler-icons.scss` from the `webfont/` directory to `_sass/tabler-icons/`, and all the files from `webfont/fonts/` to `files/fonts/`.
 
 ---
 
