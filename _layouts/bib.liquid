@@ -243,7 +243,7 @@
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" "_blank">Slides</a>
         {% else %}
           <a href="{{ entry.slides | prepend: '/files/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target = "_blank">Slides</a>
         {% endif %}
