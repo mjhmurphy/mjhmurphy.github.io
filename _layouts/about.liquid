@@ -14,37 +14,54 @@ layout: default
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
-I study topics in microeconomic theory, especially learning and information.<br /> My CV can be found <a href="{{ '/files/pdf/CV_mjHM.pdf' | relative_url }}" target="_blank">here</a>.
+
   <article>
     {% if page.profile %}
-	
-	{% if page.profile.disc %}
-	  <div class="disc">{{ page.profile.disc }}</div>
-	{% endif %}
+      {% if page.profile.disc %}
+        <div class="disc">{{ page.profile.disc }}</div>
+      {% endif %}
+
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-	
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'files/img/' %}
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+
+          {% capture sizes %}
+            (min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px,
+            (min-width: 576px) 30vw,
+            95vw
+          {% endcapture %}
+
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            include figure.liquid
+            loading="eager"
+            path=profile_image_path
+            class=profile_image_class
+            sizes=sizes
+            alt=page.profile.image
             cache_bust=true
           %}
         {% endif %}
+
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix">
+      <p>
+        I am an economic theorist studying learning and digital economies. My current research primarily focuses on how technological changes influence market structure and producer incentives. 
+		My CV can be found
+        <a href="{{ '/files/pdf/CV_mjHM.pdf' | relative_url }}" target="_blank">here</a>.
+      </p>
+
+      {{ content }}
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -71,7 +88,6 @@ I study topics in microeconomic theory, especially learning and information.<br 
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
-
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
@@ -81,3 +97,4 @@ I study topics in microeconomic theory, especially learning and information.<br 
     {% endif %}
   </article>
 </div>
+
