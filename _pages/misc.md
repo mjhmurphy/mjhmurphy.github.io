@@ -5,7 +5,7 @@ title: Miscellaneous
 description: 
 nav: false
 ---
-See below a collection of miscellaneous links. 
+See below a collection of miscellaneous links. Last updated a long time ago.
 
 Music: <a href="{{ 'https://www.discogs.com/user/mjhm' }}" target = "_blank">Music</a>. <a href="{{ '/files/misc/Concerts.txt' | relative_url }}" target = "_blank">Concerts</a>. 
 
